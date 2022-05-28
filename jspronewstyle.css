@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    height:40vh;
+    width:100%;
+    background:url("https://wallpaperaccess.com/full/310243.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+body{
+    background-color: rgb(40,40,40);
+   
+}
+
+h1{
+    color:white;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#container{
+margin-top: 5%;
+width: 360px;
+height: 35px;
+
+}
+img{
+   height:100%;
+   width: 100%; 
+}
+
+form{
+   width: 100%;
+   height: 100%;
+   position: relative;
+   display: flex;
+}
+input{
+    width: 100%;
+    height:100%;
+    border:none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+#searchbtn{
+    position: absolute;
+    right:0px;
+    height:100%;
+    width:40px;
+    border:none;
+    border-radius: 20px;
+    background-color:maroon;
+    color:white;
+
+}
+#searchbtn:hover{
+    cursor: pointer;
+    transform: scale(0.96);
+}
+
+#result{
+    height: 60vh;
+    width: 100%;
+    position:relative;
+     color:white;
+     text-align: center;
+
+}
+
+#result div{
+    color:white;
+    font-size:18px;
+     
+}
+
+.song-list{
+    list-style:none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%,0);
+    min-width:350px;
+}
+
+.song-list li{
+    margin-bottom: 20px;
+    max-width: 500px;
+    justify-content: space-evenly;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: overline;
+    position: relative;
+}
+.song-list li::after{
+    content: "";
+    position: absolute;
+    right: -20px;
+    left:-20px;
+    bottom: -4px;
+    height: 3px;
+    background:blanchedalmond;
+    display: inline-block;
+}
+.song-list li div{
+    float:left;
+}
+.song-list li span{
+    float:right;
+    background-color:maroon;
+    border: none;
+    font-size: 15px;
+    border-radius: 12px;
+    color:#fff;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 4px 10px;
+    text-transform: capitalize;
+}
